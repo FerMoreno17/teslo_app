@@ -8,11 +8,11 @@ import 'package:teslo_shop/features/products/products.dart';
 final goRouterProvider = Provider((ref) {
   final goRouterNotifier = ref.watch(appRouterNotifierProvider);
   return GoRouter(
-    initialLocation: '/chech-status',
+    initialLocation: '/check-status',
     refreshListenable: goRouterNotifier,
     routes: [
       GoRoute(
-        path: '/chech-status',
+        path: '/check-status',
         builder: (context, state) => const CheckAuthStatusScreen(),
       ),
 
